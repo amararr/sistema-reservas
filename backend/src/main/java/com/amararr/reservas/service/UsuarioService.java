@@ -19,11 +19,14 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
-    public Usuario obtenerPorId(Long id) {
-        return usuarioRepository.findById(id).orElse(null);
+     public Usuario obtenerPorId(Long id) {
+    return usuarioRepository.findById(id)
+            .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
     }
 
     public Usuario guardar(Usuario usuario) {
         return usuarioRepository.save(usuario);
     }
+    
+   
 }

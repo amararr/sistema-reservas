@@ -1,5 +1,41 @@
 # Preparación de entorno en Ubuntu 24.04
 
+## Qué
+
+Preparación de un entorno base en Ubuntu 24.04 para desarrollo de aplicaciones web, incluyendo herramientas esenciales como Git y Docker.
+
+## Cómo
+
+El proceso se divide en una secuencia de pasos:
+
+- Actualización del sistema
+- Instalación y configuración de Git
+- Configuración de acceso SSH
+- Conexión con repositorio remoto
+- Instalación y configuración de Docker
+- Verificación del entorno
+
+## Por qué
+
+Este enfoque permite:
+
+- Disponer de un entorno reproducible
+- Facilitar la portabilidad entre proyectos
+- Reducir errores de configuración
+- Estandarizar el proceso de arranque de proyectos
+
+## Verificación
+
+Cada paso incluye su propia verificación para asegurar que el entorno queda correctamente configurado.
+
+## Problemas comunes
+
+Se documentan errores habituales en cada sección para facilitar su resolución.
+
+---
+
+> ⚠️ Nota: Esta sección podría integrarse en "Qué" en futuras revisiones para evitar duplicidad conceptual.
+
 ## 1. Objetivo
 
 Este documento describe el proceso de preparación de un entorno de desarrollo base en Ubuntu 24.04 para proyectos web.
@@ -16,7 +52,28 @@ Este proceso es reutilizable para cualquier proyecto similar.
 
 ---
 
+## Alcance
+
+Este documento cubre exclusivamente la preparación del entorno base en Ubuntu 24.04.
+
+Incluye:
+
+- Configuración del sistema
+- Instalación de herramientas necesarias
+- Configuración de acceso a repositorios
+- Instalación y verificación de Docker
+
+Quedan fuera de este documento:
+
+- Organización interna del proyecto
+- Desarrollo de backend o frontend
+- Configuración específica de aplicaciones
+
+---
+
 ## 2. Actualización del sistema
+
+
 
 ### Comando
 
@@ -245,5 +302,16 @@ El entorno queda preparado para:
 * desarrollo frontend
 * integración con contenedores
 * trabajo con repositorio remoto
+
+---
+
+## Observaciones de modularización
+
+Este documento incluye actualmente secciones que podrían separarse en el futuro para mejorar la reutilización:
+
+- Creación y gestión de repositorios Git
+- Estructura base de proyectos
+
+Estas secciones se mantienen aquí temporalmente para conservar el flujo completo de preparación del entorno, pero podrán extraerse en módulos independientes si la documentación evoluciona.
 
 ---

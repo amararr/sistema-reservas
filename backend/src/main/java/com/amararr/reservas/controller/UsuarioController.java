@@ -3,6 +3,7 @@ package com.amararr.reservas.controller;
 import com.amararr.reservas.entity.Usuario;
 import com.amararr.reservas.service.UsuarioService;
 import org.springframework.web.bind.annotation.*;
+import jakarta.validation.Valid;
 
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public Usuario crear(@RequestBody Usuario usuario) {
+    public Usuario crear(@Valid @RequestBody Usuario usuario) {
         return usuarioService.guardar(usuario);
     }
 }

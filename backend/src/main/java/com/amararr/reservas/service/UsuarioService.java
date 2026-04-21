@@ -3,6 +3,8 @@ package com.amararr.reservas.service;
 import com.amararr.reservas.entity.Usuario;
 import com.amararr.reservas.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
 
@@ -21,7 +23,7 @@ public class UsuarioService {
 
      public Usuario obtenerPorId(Long id) {
     return usuarioRepository.findById(id)
-            .orElseThrow(() -> new RuntimeException("Usuario no encontrado"));
+            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Usuario no encontrado"));
     }
 
     public Usuario guardar(Usuario usuario) {
